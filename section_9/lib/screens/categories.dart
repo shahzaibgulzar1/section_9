@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:section_9/data/dummy_data.dart';
 import 'package:section_9/models/meal.dart';
 import 'package:section_9/widgets/category_grid_item.dart';
@@ -8,11 +9,9 @@ import 'package:section_9/models/category.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({
     super.key,
-    
     required this.availableMeals,
   });
 
-  
   final List<Meal> availableMeals;
 
   void _selectCategory(BuildContext context, Category category) {
@@ -25,7 +24,6 @@ class CategoriesScreen extends StatelessWidget {
         builder: (ctx) => MealsScreen(
           title: category.title,
           meals: filteredMeals,
-        
         ),
       ),
     ); // Navigator.push(context, route)

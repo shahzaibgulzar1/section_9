@@ -4,6 +4,7 @@ import 'package:transparent_image/transparent_image.dart';
 import 'package:section_9/widgets/meal_item_trait.dart';
 import 'package:section_9/models/meal.dart';
 
+
 class MealItem extends StatelessWidget {
   const MealItem({
     super.key,
@@ -71,12 +72,8 @@ class MealItem extends StatelessWidget {
                     const SizedBox(height: 12),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      
-                      
-
-                       children: [
+                      children: [
                         MealItemTrait(
-
                           icon: Icons.schedule,
                           label: '${meal.duration} min',
                         ),

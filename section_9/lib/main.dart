@@ -14,9 +14,8 @@ final theme = ThemeData(
 
 void main() {
   runApp(
-    const ProviderScope //widget that stores the state of providers using it here to wrap the entire app
-    (
-      child: App(), //by wrapping this means we have wrapped entire app...,so that all the widgets in the entire app can use the riverpod's features.
+    const ProviderScope(
+      child: App(),
     ),
   );
 }
@@ -32,3 +31,4 @@ class App extends StatelessWidget {
     );
   }
 }
+
